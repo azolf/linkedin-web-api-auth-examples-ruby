@@ -56,8 +56,8 @@ You could also clone the repository and start the container with the `docker-com
 version: '3'
 services:
   app:
-    image: azolf/spotify-web-api-auth-examples-ruby
-    container_name: spotify-web-api-auth-examples-ruby
+    image: azolf/linkedin-web-api-auth-examples-ruby
+    container_name: linkedin-web-api-auth-examples-ruby
     ports:
       - 8000:8000
     environment:
