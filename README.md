@@ -53,11 +53,16 @@ azolf/linkedin-web-api-auth-examples-ruby:latest
 ## Using docker-compose
 You could also clone the repository and start the container with the `docker-compose.yml` file. You just need to replace your Client Id and Client Secret in it.
 ```
-...
+version: '3'
+services:
+  app:
+    image: azolf/spotify-web-api-auth-examples-ruby
+    container_name: spotify-web-api-auth-examples-ruby
+    ports:
+      - 8000:8000
     environment:
       - CLIENT_ID=YOUR_CLIENT_ID
       - CLIENT_SECRET=YOUR_CLIENT_SECRET
-...
 ```
 
 ```
